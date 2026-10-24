@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+<style>
+
+  body {
+    background-color: #050505;
+    background-image: url('road3.png');
+    background-repeat: repeat;
+    background-position: top left;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+  z-index: -1;
+}
+
+    #myBtn {
+      background-color: #cdee12;
+      color: #000000;
+    }
+</style>
+
+</head>
+
+<body>
+<a id="top"></a>
+<header>
+
+    <div class="logo-area">
+        <img src="tread2.png" alt="Tradere logo">
+        <div class="logo">
+            Tr&#257dere
+            <h3><strong>Entrust&nbsp;&rArr;&nbsp;Convey&nbsp;&rArr;&nbsp;Deliver.</strong></h3>
+        </div>
+    </div>
+
+    <a href="#" class="image-link">
+  <img src="WZlogo.png" alt="Description">
+  <p>site design by web<span class="circled-letter">Z</span>illa</p>
+</a>
+
+<button class="menu-button" id="menuButton"
+        aria-label="Open menu"
+        aria-expanded="false">
+    ☰
+</button>
+
+<nav id="sideMenu">
+    <button class="close-menu" id="closeMenu"
+            aria-label="Close menu">
+        &times;
+    </button>
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="socials.html">Man & Van</a>
+        <a href="services.html">Driver Cover</a>        
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+    <main>
+
+        <h1>Experience</h1>
+
+<h3><strong>Headline explaining you</strong></h3>
+
+
+<p>A</p>
+<p>B</p>
+<p>C</p>
+<p>D</p>
+<p>E</p>
+
+<h3>Sub heading</h3>
+
+<p>F</p>
+<p>G</p>
+<p>H</p>
+<p>I</p>
+<p>J</p>
+<p>K</p>
+
+<h3><strong>Check Our Social Media</strong></h3>
+
+        <a class="button" href="#">link to instagram</a>
+
+        <a class="button" href="#">link to facebook</a>
+
+        <a class="button" href="#">link to tiktok</a>
+
+        <a class="button" href="#">link to twitter</a>
+
+<p>If you would like to chat, you can book an intro call</p>
+
+        <a class="button" href="#">Book An Intro Call</a>
+
+<p>If you are ready to start</p>
+
+        <a class="button" href="#">Book Now</a>        
+
+    </main>
+
+<a href="#"  id="myBtn" class="back-to-top">^^^&nbsp; Back to Top &nbsp; ^^^</a>
+
+<footer>
+Tr&#257dere is a trading name of JOHN KILBRIDE LIMITED
+<br> Registered in Scotland SC825566  
+<span style="border-left: 1px solid #00ff2a; margin: 0 10px;"></span>
+73 Kingston Rd, Kilsyth G65 0JG
+</footer>    
+
+<script>
+const menu = document.getElementById('sideMenu');
+const menuButton = document.getElementById('menuButton');
+const closeButton = document.getElementById('closeMenu');
+
+function openMenu() {
+    menu.classList.add('open');
+    menuButton.setAttribute('aria-expanded', 'true');
+}
+
+function closeMenu() {
+    menu.classList.remove('open');
+    menuButton.setAttribute('aria-expanded', 'false');
+}
+
+menuButton.addEventListener('click', openMenu);
+closeButton.addEventListener('click', closeMenu);
+
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closeMenu();
+    }
+});
+</script>
+
+</body>
+
+</html>
