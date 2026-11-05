@@ -171,6 +171,10 @@ margin-bottom: 18px;
     p {
         font-size: 17px;
     }
+ .logo h3 {
+        font-size: 13px;
+        margin-top: 5px;
+    }    
 
 }
 
