@@ -194,6 +194,11 @@ margin-bottom: 18px;
     main {
         padding-top: 0px;
     }
+      .image-link {
+    bottom: 60px;
+    right: 15px;
+    margin-bottom: 10px;
+    }
 }
 
 footer {
