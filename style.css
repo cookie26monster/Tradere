@@ -343,5 +343,7 @@ body {
   .image-link {
     bottom: 60px;
     right: 15px;
-  }
+    margin-bottom: 10px;
+}
+  
 }
